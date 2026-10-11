@@ -14,24 +14,15 @@ import torch
 # # the size of tensor b (2) at non-singleton dimension 1"
 # normalized = x - torch.mean(x, dim=1, keepdim=False) 
 
-
 def stable_soft_max(x,dim):
-
     max_val=torch.max(x, dim, keepdim=True)
-
     exp=torch.exp(x-max_val)
-
     return exp/torch.sum(exp,dim,keepdim=True) 
 
-
 def log_softmax(x,dim):
-
     max_val=torch.max(x,dim,keepdim=True)
-
     shifted_x = x-max_val
-
     log_sum = torch.log(torch.sum(torch.exp(shifted_x,dim),dim,keepdim=True))
-
     return shifted_x - log_sum 
 
 

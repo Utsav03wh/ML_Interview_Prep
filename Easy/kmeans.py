@@ -42,8 +42,6 @@ def kmeans(X,k,max_iters=100,tol=1e-4):
 
         centroids = new_centroids
 
-
-
     return centroids, labels
 
 

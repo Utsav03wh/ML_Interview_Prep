@@ -16,6 +16,8 @@
 - K-means clustering, including the initialization choice and convergence check.
 - K-nearest neighbors classification.
 - Precision, recall, F1, and ROC-AUC computed from predictions.
+- Batch collation for variable-length sequences: padding, attention masks, and sorting by length.
+- Perplexity from token log-probabilities.
 
 **Basic neural network pieces:**
 
@@ -86,6 +88,9 @@
 - A reward model training loss (Bradley–Terry on preference pairs).
 - KL divergence estimators between policy and reference (the k1, k2, and k3 estimators).
 - SAC or TD3 actor and critic updates for continuous control.
+- Advantage actor-critic (A2C) on CartPole.
+- Off-policy evaluation with importance sampling, including the weighted and per-decision variants.
+- The cross-entropy method (CEM) for planning or policy search.
 
 **Systems and efficiency:**
 
@@ -108,3 +113,6 @@
 - **Karpathy's nanoGPT, minbpe, and "Zero to Hero":** for transformers, tokenizers, and training loops.
 - **Stanford CS336 assignments:** for the hard LLM problems (tokenizer, transformer, efficient training).
 - **CleanRL:** read its single-file PPO, DQN, and SAC implementations after writing your own, to compare details.
+## ML Systems Design notes
+
+See [MLSystems/](MLSystems/index.md): [LLM Serving](MLSystems/llm-serving.md) · [Distributed Training](MLSystems/distributed-training.md) · [RL Post-Training Infra](MLSystems/rl-post-training.md)
