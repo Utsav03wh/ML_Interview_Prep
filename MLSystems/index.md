@@ -9,6 +9,7 @@ Interview-prep notes on the systems side of large models. Each page opens with t
 | Topic | Core idea in one line |
 |---|---|
 | [Metrics & Performance Concepts](metrics.md) | Compute, memory bandwidth or communication: find which one limits you, then measure how well you use it. |
+| [Serving Pipeline & Interview Checklist](serving-pipeline.md) | The end-to-end request path, FlashAttention's online softmax, and rapid-fire interview answers. |
 | [LLM Serving](llm-serving.md) | Prefill is compute-bound and decode is memory-bandwidth-bound. Every serving trick targets one of the two. |
 | [Distributed Training](distributed-training.md) | Each parallelism splits something different across GPUs and pays for it in communication. |
 | [RL Post-Training Infrastructure](rl-post-training.md) | RL alternates inference-heavy rollouts with training-heavy updates, and the hard part is coordinating the two. |

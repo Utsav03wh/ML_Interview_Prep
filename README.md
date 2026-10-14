@@ -115,4 +115,4 @@
 - **CleanRL:** read its single-file PPO, DQN, and SAC implementations after writing your own, to compare details.
 ## ML Systems Design notes
 
-See [MLSystems/](MLSystems/index.md): [Metrics & Perf Concepts](MLSystems/metrics.md) · [LLM Serving](MLSystems/llm-serving.md) · [Distributed Training](MLSystems/distributed-training.md) · [RL Post-Training Infra](MLSystems/rl-post-training.md)
+See [MLSystems/](MLSystems/index.md): [Metrics & Perf Concepts](MLSystems/metrics.md) · [Serving Pipeline](MLSystems/serving-pipeline.md) · [LLM Serving](MLSystems/llm-serving.md) · [Distributed Training](MLSystems/distributed-training.md) · [RL Post-Training Infra](MLSystems/rl-post-training.md)
